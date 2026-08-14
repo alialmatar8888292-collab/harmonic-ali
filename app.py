@@ -1,12 +1,4 @@
 import sys
-import subprocess
-try:
-    import yfinance as yf
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install",
-                            "yfinance", "plotly", "pandas", "numpy", "scipy"])
-    import yfinance as yf
-
 import streamlit as st
 import plotly.graph_objects as go
 import pandas as pd
